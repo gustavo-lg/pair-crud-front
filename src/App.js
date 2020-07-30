@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { Navbar, Nav } from 'react-bootstrap'
 import Home from './components/Home';
+import Add from './components/Add';
 
 const App = () => {
   return(
@@ -24,6 +25,7 @@ const App = () => {
     </Navbar>   
         <Switch>
           <Route exact path='/' component={Home}/>
+          <Route exact path='/add' component={Add}/>
         </Switch>
       </Router>
     </Fragment>
